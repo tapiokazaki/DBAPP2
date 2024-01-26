@@ -1,0 +1,38 @@
+/* General styles for the entire application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Styles for all headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* General button styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* General input styling */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* General list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}

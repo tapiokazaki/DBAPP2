@@ -1,0 +1,16 @@
+table作成
+
+CREATE TABLE todos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  task VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE todo_groups (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  description TEXT
+);
+
+連鎖削除
+
+ALTER TABLE todos ADD CONSTRAINT todos_ibfk_1 FOREIGN KEY (group_id) REFERENCES todo_groups(id) ON DELETE CASCADE;
